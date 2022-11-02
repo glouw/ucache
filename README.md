@@ -13,7 +13,16 @@ insertions.
 
 ## Example use
 
+`gcc main.c ucache.c && ./a.out`
+
+`main.c`
+
 ```
+#include "ucache.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
 int*
 Int(int x)
 {
