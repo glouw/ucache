@@ -246,7 +246,7 @@ List_Pop(List* self, Node* at)
 {
     if(List_Empty(self))
     {
-        puts("List_Pop(List*, Node*) :: tried to pop an empty list");
+        puts("error: ucache: List_Pop(List*, Node*): tried to pop an empty list");
         exit(1);
     }
     else
@@ -296,7 +296,7 @@ Cache_Init(uint64_t cap)
 {
     if(cap == 0)
     {
-        puts("error: ucache: Cache_Init(uint64_t cap): cap size cannot be 0");
+        puts("error: ucache: Cache_Init(uint64_t): cap size cannot be 0");
         exit(1);
     }
     Cache* self = malloc(sizeof(*self));
