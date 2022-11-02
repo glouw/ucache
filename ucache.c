@@ -6,11 +6,11 @@
 
 typedef struct Node Node;
 
-typedef struct List List;
-
 typedef struct Link Link;
 
 typedef struct Hash Hash;
+
+typedef struct List List;
 
 struct Node
 {
