@@ -43,3 +43,16 @@ main(void)
     return 0;
 }
 ```
+
+## Performance
+
+Read and write performance is O(1).
+Every read requires a key value pair reprioritization and therefor is marginally
+slower than writes. Read and write speed may degrade when the cache cap is reached.
+Below, read speed halves when the cap size (19319) is reached.
+
+### Read (Cache_Get)
+![](images/Cache_Get.png)
+
+### Write (Cache_Put)
+![](images/Cache_Put.png)
